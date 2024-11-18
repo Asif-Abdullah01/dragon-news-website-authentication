@@ -1,0 +1,23 @@
+import Marquee from "react-fast-marquee";
+import { Link } from "react-router-dom";
+
+const LatestNews = () => {
+    return (
+        <div className="flex gap-2 text-center bg-slate-200 p-2 items-center">
+            <p className="bg-[#D72050] text-base-100 px-3 py-1">Latest</p>
+            <Marquee pauseOnHover={true} speed={50} className="space-x-10">
+                <Link to={'/news'}>
+                Match Highlights: Germany vs Spain — as it happened   !   Match Highlights: Germany vs Spain as...
+                </Link>
+                <Link to={'/news'}>
+                Match Highlights: Germany vs Spain — as it happened   !   Match Highlights: Germany vs Spain as...
+                </Link>
+                <Link to={'/news'}>
+                Match Highlights: Germany vs Spain — as it happened   !   Match Highlights: Germany vs Spain as...
+                </Link>
+            </Marquee>
+        </div>
+    );
+};
+
+export default LatestNews;
